@@ -1,1 +1,0 @@
-# ownedapp.com
