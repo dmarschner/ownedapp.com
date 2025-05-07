@@ -1,3 +1,12 @@
+:root {
+  --color-background-primary: #1E222B;
+  --color-background-secondary: #181B22;
+  --color-text-default: #9297A8;
+  --color-text-headline: #FFFFFF;
+  --color-accent-primary: #A2C799;
+  --color-accent-secondary: #9B81BC;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 * {
@@ -9,14 +18,14 @@
 
 html, body {
   height: 100%;
-  background-color: #1E222B;
+  background-color: var(--color-background-primary);
   margin: 0;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Fira Sans', 'AG', -apple-system, BlinkMacSystemFont, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-  color: #9297A8;
+  color: var(--color-text-default);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -24,7 +33,7 @@ body {
 }
 
 a {
-  color: #A2C799;
+  color: var(--color-accent-primary);
   text-decoration: none;
 }
 
@@ -47,7 +56,7 @@ ul, li {
 h1,
 h2,
 h3 {
-  color: #FFFFFF;
+  color: var(--color-text-headline);
 }
 
 h1 {
@@ -99,7 +108,7 @@ h3 {
   width: 600px;
   height: 400px;
   margin-top: 25px;
-  border: 3px solid #fff;
+  border: 3px solid var(--color-text-headline);
   background-image: url("../images/me.png");
   background-position: 0px 0px;
   background-repeat: no-repeat;
@@ -135,7 +144,7 @@ h3 {
 #logo-text {
   font-size: 5em;
   font-weight: 700;
-  color: #FFFFFF;
+  color: var(--color-text-headline);
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
@@ -198,26 +207,26 @@ h3 {
 
 .slogan {
   font-size: 1.1em;
-  color: #9297A8;
+  color: var(--color-text-default);
 }
 
 .slogan:not(.tagline) {
   font-family: 'Fira Code', monospace;
   text-transform: uppercase;
-  color: #9B81BC;
+  color: var(--color-accent-secondary);
   margin-bottom: 15px;
 }
 
 .slogan.tagline {
   font-size: 0.9em;
-  color: #9297A8;
+  color: var(--color-text-default);
   font-style: normal;
   margin-bottom: 5px;
 }
 
 .coming-soon {
   font-size: 0.9em;
-  color: #9297A8;
+  color: var(--color-accent-primary);
   font-style: italic;
   margin: 0;
 }
@@ -233,8 +242,8 @@ h3 {
 /* New Footer Styles */
 .site-footer {
   width: 100%;
-  background-color: #181B22;
-  color: #9297A8;
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-default);
   padding: 15px 0;
   text-align: center;
   font-size: 0.85em;
@@ -246,7 +255,7 @@ h3 {
 }
 
 .site-footer a {
-  color: #A2C799;
+  color: var(--color-accent-primary);
   text-decoration: none;
 }
 
@@ -259,7 +268,7 @@ h3 {
   top: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: #A2C799;
+  background-color: var(--color-accent-primary);
   padding: 8px;
   border-radius: 50%;
   display: inline-flex;
